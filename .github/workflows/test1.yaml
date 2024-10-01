@@ -7,7 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Hola Mundo
-      run: echo "Hola Github ACtions" 
+      run: echo "Hola Github ACtions"
+    - name: Create file
+      run: touch content.txt
+    - name: Add content
+      run: echo "Content file" >> content.txt 
+    - name: Show content
+      run: cat content.txt 
   other:
     runs-on: ubuntu-latest
     steps:
