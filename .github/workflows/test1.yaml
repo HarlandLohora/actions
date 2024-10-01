@@ -9,7 +9,7 @@ jobs:
     - name: Hola Mundo
       run: echo "Hola Github ACtions" 
   other:
-    runs-on: LS
+    runs-on: ubuntu-latest
     steps:
     - name: LS
       run: ls -la
